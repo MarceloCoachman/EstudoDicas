@@ -1,2 +1,9 @@
-# EstudoDicas
- Estudos e dicas para desenvolvimentos
+# Estudo e Dicas
+## Estudos e dicas para desenvolvimentos
+
+#### Desafios/Exercícios
+
+##### *  
+
+
+
