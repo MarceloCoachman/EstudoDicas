@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Programa_para_Validação_de_Notas
+namespace Validador_de_senhas_com_requisitos
 {
-    class Programa_para_Validação_de_Notas_Resolvido
+    class Program
     {
         static void Main(string[] args)
         {
