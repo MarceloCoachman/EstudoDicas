@@ -10,7 +10,7 @@ import{Component, OnChanges, Input, ɵɵNgOnChangesFeature} from '@angular/core'
 export class StarComponent implements OnChanges {
     @Input()
     rating: number = 0;
-    starWidth: number;
+    starWidth!: number;
     ngOnChanges(): void{
         this.starWidth = this.rating * 94 / 5 
 
