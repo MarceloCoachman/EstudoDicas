@@ -7,6 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
@@ -62,11 +63,18 @@ namespace cursos.api.Controllers
                     new Claim(ClaimTypes.Email, usuarioViewModelOutput.Email.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddDays(1),
-                SigningCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256
+                SigningCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature)
                 
-                )};
+                };
+            var jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
+            var tokenGenerated = jwtSecurityTokenHandler.CreateToken(securityTokenDescriptor);
+            var token = jwtSecurityTokenHandler.WriteToken(tokenGenerated);
 
-            return Ok (loginViewModelInput);
+            return Ok (new 
+            {
+                Token = token,
+                Usuario = usuarioViewModelOutput
+            } );
         }
 
         [HttpPost]
