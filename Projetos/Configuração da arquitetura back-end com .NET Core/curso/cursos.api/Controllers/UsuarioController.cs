@@ -1,24 +1,19 @@
 ﻿using cursos.api.Filters;
 using cursos.api.Models;
 using cursos.api.Models.Usuarios;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace cursos.api.Controllers
 {
     [Route("api/v1/usuario")]
     [ApiController]
     public class UsuarioController : ControllerBase
-    
     {
         private object usuarioViewModelOutput;
 
@@ -46,7 +41,7 @@ namespace cursos.api.Controllers
             //login fake
             var usuarioViewModelOutput = new UsuarioViewModelOutput()
             {
-                Codigo=1 ,
+                Codigo = 1,
                 Login = "Marcelo",
                 Email = "marcelo@marcelo.br"
             };
@@ -64,17 +59,17 @@ namespace cursos.api.Controllers
                 }),
                 Expires = DateTime.UtcNow.AddDays(1),
                 SigningCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature)
-                
-                };
+
+            };
             var jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
             var tokenGenerated = jwtSecurityTokenHandler.CreateToken(securityTokenDescriptor);
             var token = jwtSecurityTokenHandler.WriteToken(tokenGenerated);
 
-            return Ok (new 
+            return Ok(new
             {
                 Token = token,
                 Usuario = usuarioViewModelOutput
-            } );
+            });
         }
 
         [HttpPost]
