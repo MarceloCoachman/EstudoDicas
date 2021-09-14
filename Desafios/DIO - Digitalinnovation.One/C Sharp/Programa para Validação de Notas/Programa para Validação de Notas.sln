@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programa para Validação de Notas", "Programa para Validação de Notas.csproj", "{DB528584-4092-45EE-BA64-F480FA9A378B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB528584-4092-45EE-BA64-F480FA9A378B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB528584-4092-45EE-BA64-F480FA9A378B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB528584-4092-45EE-BA64-F480FA9A378B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB528584-4092-45EE-BA64-F480FA9A378B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6619F51C-5D84-41DB-890E-BBB5F975180F}
+	EndGlobalSection
+EndGlobal
