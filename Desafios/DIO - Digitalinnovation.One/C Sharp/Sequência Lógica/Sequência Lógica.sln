@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sequência Lógica", "Sequência Lógica.csproj", "{0D1A92D9-0701-4838-89E7-F408C2EB0C76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D1A92D9-0701-4838-89E7-F408C2EB0C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1A92D9-0701-4838-89E7-F408C2EB0C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1A92D9-0701-4838-89E7-F408C2EB0C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1A92D9-0701-4838-89E7-F408C2EB0C76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C0438D6-BF79-4242-BBC2-3CF287B8A36D}
+	EndGlobalSection
+EndGlobal
