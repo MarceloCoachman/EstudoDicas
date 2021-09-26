@@ -31,3 +31,25 @@ namespace Positivos_e_Média
 
     }
 }
+
+//leia 6 valores.em seguida, mostre quantos destes valores digitados foram positivos. na próxima linha,
+//    deve-se mostrar a média de todos os valores positivos digitados, com um dígito após o ponto decimal.
+
+//entrada
+//a entrada contém 6 números que podem ser valores inteiros ou de ponto flutuante. pelo menos um destes números será positivo.
+
+//saída
+//o primeiro valor de saída é a quantidade de valores positivos. a próxima linha deve mostrar a média dos valores positivos digitados.
+
+ 
+//exemplo de entrada	
+//7
+//-5
+//6
+//-3.4
+//4.6
+//12
+
+//exemplo de saída
+//4 valores positivos
+//7.4
